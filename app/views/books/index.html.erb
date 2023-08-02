@@ -1,2 +1,13 @@
-<h1>Books#index</h1>
-<p>Find me in app/views/books/index.html.erb</p>
+<% @books.each do |book| %>
+    <h3>本のタイトル<h3>
+    <span><%= book.title %></span>
+
+    <h3>感想</h3>
+    <span><%= book.body %></span>
+
+    <span><%= link_to "Show", "/books/#{book.id}" %></span>
+
+    <span><%= link_to "Edit", "/books/#{book.id}/edit" %></span>
+
+    <%= link_to "Destroy", book_path(book.id), method: :delete, "data-confirm" => "本当に削除しますか？" %>
+<% end %>
