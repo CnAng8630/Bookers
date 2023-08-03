@@ -13,3 +13,43 @@
  *= require_tree .
  *= require_self
  */
+h1,h2,p,th,td{
+  font-family: "Comic Sans MS", "游教科書体", sans-serif
+}
+
+th{
+  padding: 0 10px;
+}
+
+td{
+  padding: 0 10px;
+  color: #333;
+}
+
+.flash-message{
+  border-radius: 5px;
+  padding: 16px 24px;
+  margin: 16px 0px;
+}
+
+.flash-message.notice{
+  background-color: #9f9;
+  color: green;
+  border: solid 1px green;
+}
+
+.flash-message.alert{
+  background-color: #fcc;
+  color: red;
+  border: solid 1px red;
+}
+
+.error-message{
+  box-sizing: border-box;
+  width: 300px;
+  padding: 16px 24px;
+  margin: 16px 0px;
+  background-color: #eee;
+  color: black;
+  border: solid 2px red;
+}
